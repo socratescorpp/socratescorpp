@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('fondo-recetas.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+#sabores {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(255, 140, 0, 0.3);
+    border: 10px solid #ff6b1a; 
+}
+.fila {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #ff6b1a;
+    color: white;
+    transform: scale(1.05);
+}
+
+.icono img {
+    width: 100%; 
+    max-width: 150px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.receta {
+    display: none;
+    background: rgba(255, 107, 26, 0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.receta.hidden {
+    display: none;
+}
+
+.receta.visible {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#volver {
+    background-color: #ff6b1a;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#volver:hover {
+    background-color: #e65c00;
+}
+
+@media (max-width: 768px) {
+    .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    .icono img {
+        max-width: 120px; 
+    }
+}
