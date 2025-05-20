@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(255, 140, 0, 0.3);
+    text-align: center;
+    border-left: 8px solid #ff6b1a; 
+}
+button {
+    background-color: #ff6b1a;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+#estrellas {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.estrella {
+    color: lightgray;
+    transition: color 0.3s ease;
+}
+
+.estrella:hover, .estrella.active {
+    color: gold;
+}
+.animada {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
