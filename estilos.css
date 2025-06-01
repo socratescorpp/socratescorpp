@@ -75,7 +75,6 @@ html{
    font-size: 25px;
    color: #a8a8a8;
 }
-/* Carrusel */
 #inicio .carrusel{
     position: relative;
     height: 100%;
@@ -122,9 +121,6 @@ html{
     height: 100vh;
     object-fit: cover;
 }
-
-
-
 #sabores{
     padding: 50px 0;
 }
@@ -373,4 +369,40 @@ html{
     #contacto .fila input{
         width: 90%;
     }
+    #carrito {
+        padding: 50px 20px;
+        background: #fff5eb;
+        text-align: center;
+    }
+    
+    #carrito h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #c94f18;
+    }
+    
+    .carrito-contenido {
+        background: #fff;
+        border: 2px dashed #ccc;
+        padding: 30px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        font-size: 18px;
+    }
+    
+    .btn-comprar {
+        padding: 10px 20px;
+        background-color: #c94f18;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s ease;
+    }
+    
+    .btn-comprar:hover {
+        background-color: #9e3c14;
+    }
+   
 }
