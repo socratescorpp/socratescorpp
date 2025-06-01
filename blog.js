@@ -1,10 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const boton = document.querySelector(".btn-volver");
-
-    boton.addEventListener("click", () => {
-        boton.classList.add("clicked");
-        setTimeout(() => {
-            window.location.href = "index.html";
-        }, 300); 
-    });
-});
+function volver() {
+    if (confirm('¿Seguro que quieres volver a la página principal?')) {
+        window.location.href = 'index.html';
+    }
+}
