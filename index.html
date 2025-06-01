@@ -7,7 +7,7 @@
     <title>PAGINAWEB</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilos.css">
 
 
 </head>
@@ -21,42 +21,49 @@
                 <nav id="nav">
                     <ul>
                         <li>
-                            <a href="#inicio" onclick="seleccionar()">
+                            <a href="inicio.html" onclick="seleccionar()">
                                 <i class="fa-solid fa-house"></i>
                                 <span>Inicio</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#sabores" onclick="seleccionar()">
+                            <a href="sabores.html" onclick="seleccionar()">
                                 <i class="fa-solid fa-ice-cream"></i>
                                 <span>Sabores</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#platos" onclick="seleccionar()">
+                            <a href="platos.html" onclick="seleccionar()">
                                 <i class="fa-solid fa-utensils"></i>
                                 <span>Platos</span>
                             </a></li>
                         <li>
-                            <a href="#blog" onclick="seleccionar()">
+                            <a href="blog.html" onclick="seleccionar()">
                                 <i class="fa-solid fa-pen"></i>
                                 <span>Blog</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#contacto" onclick="seleccionar()">
+                            <a href="contacto.html" onclick="seleccionar()">
                                 <i class="fa-solid fa-comments"></i>
                                 <span>Contacto</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="carrito.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Carrito</span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
                 <div class="social">
                     <a href="tel:+1234-567-8910">
                         <i class="fa-solid fa-phone"></i>+1234-567-8910
                     </a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                    <a href="https://www.facebook.com/share/1FvziYfMdB/>"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/cris_hhc?utm_source=qr&igsh=ZWFuOWxsajh5Z3Vx>"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
                     <i class="fa-solid fa-bars"></i>
@@ -81,7 +88,7 @@
             <div class="info">
                 <h2>Comidas exquistias para el paladar </h2>
                 <p>Disfruta de nuestras recetas y platillos </p>
-                <button>Leer Más</button>
+                <button onclick="window.location.href='inicio.html'">Ver Más</button>
             </div>
         </div>
 
@@ -149,7 +156,8 @@
             </div>
         </div>
 
-        <button>Ver Más</button>
+        <button onclick="window.location.href='sabores.html'">Ver</button>
+
 
     </section>
 
@@ -163,11 +171,11 @@
             </div>
             <div class="item">
                 <img src="plato2.jpg" alt="">
-                <p>Ensalada de pescado</p>
+                <p>Salmon al horno</p>
             </div>
             <div class="item">
                 <img src="plato3.jpg" alt="">
-                <p>Plato de carne asada con verdura</p>
+                <p>Filetes a la plancha con esparragos</p>
             </div>
         </div>
         <div class="fila">
@@ -181,11 +189,10 @@
             </div>
             <div class="item">
                 <img src="plato6.jpg" alt="">
-                <p>Pasta con crema</p>
+                <p>Baozi japones</p>
             </div>
         </div>
-
-        <button>Ver Más</button>
+        <button onclick="window.location.href='platos.html'">Ver Más</button>
 
     </section>
 
@@ -226,7 +233,8 @@
                 </div>
             </div>
         </div>
-        <button>Leer Más</button>
+        <button onclick="window.location.href='blog.html'">Leer Más</button>
+
     </section>
     <section id="contacto">
         <div class="fila">
@@ -237,22 +245,24 @@
                 <h3>Menú</h3>
                 <a href="#inicio">Inicio</a>
                 <a href="#sabores">Sabores</a>
-                <a href="#sabores">Platos</a>
-                <a href="#sabores">Blog</a>
+                <a href="#platos">Platos</a>
+                <a href="#blog">Blog</a>
+                 <a href="#contacto">Contacto</a>
+                  <a href="#carrito">Carrito</a>
             </div>
             <div class="col">
                 <h3>Cheffs</h3>
-                <a href="#">PANCHITO G.</a>
-                <a href="#">CHUY L.</a>
-                <a href="#">FIONA J.</a>
+                <a href="https://www.gordonramsay.com/">RAMSAY</a>
+                <a href="https://laroussecocina.mx/chef/enrique-olvera/">OLVERA</a>
+                <a href="https://www.britannica.com/biography/Grant-Achatz">ACHATZ</a>
             </div>
             <div class="col">
                 <h3>Social Media</h3>
                 <div class="media">
-                    <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+                    <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/share/1FvziYfMdB/">Facebook</a>
                 </div>
                 <div class="media">
-                    <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+                   <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/cris_hhc?utm_source=qr&igsh=ZWFuOWxsajh5Z3Vx">Instagram</a>
                 </div>
             </div>
             <div class="col">
