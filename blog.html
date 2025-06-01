@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Blog de Cocina 🍊</title>
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="blog.css" />
 </head>
 <body>
 
-    <header class="cabecera">
-        <h1 class="titulo">Delicias en la Cocina 🍽️🔥</h1>
+    <header>
+        <h1>Delicias en la Cocina 🍽️🔥</h1>
     </header>
 
-    <section class="contenido">
-        <div class="introduccion">
-            <h2>¡Bienvenidos a nuestro blog de cocina!</h2>
-            <p>Descubre recetas increíbles y consejos prácticos para mejorar tus habilidades culinarias.</p>
+    <section>
+        <h2>Videos Destacados 🎥</h2>
+
+        <div class="video-item">
+            <iframe 
+                src="https://www.youtube.com/embed/1-SJGQ2HLp8" 
+                frameborder="0" 
+                allowfullscreen
+                title="Cómo hacer una pizza casera perfecta"
+            ></iframe>
+            <p>🍕 Cómo hacer una pizza casera perfecta</p>
         </div>
 
-        <div class="videos">
-            <h2>Videos Destacados 🎥</h2>
-            <div class="video-item">
-                <iframe width="300" height="180" src="https://www.youtube.com/embed/3AAdKl1UYZs" frameborder="0" allowfullscreen></iframe>
-                <p class="video-descripcion">🍕 Cómo hacer un spaguetti casero</p>
-            </div>
-            <div class="video-item">
-                <iframe width="300" height="180" src="https://www.youtube.com/embed/VGxzp7-0X5k" frameborder="0" allowfullscreen></iframe>
-                <p class="video-descripcion">🥗 Ensalada César fácil y rápida</p>
-            </div>
+        <div class="video-item">
+            <iframe 
+                src="https://www.youtube.com/embed/M8d0ZZ-Ths0" 
+                frameborder="0" 
+                allowfullscreen
+                title="Ensalada César - Receta"
+            ></iframe>
+            <p>🥗 Ensalada César - Receta</p>
         </div>
 
-       <button onclick="window.location.href='index.html'">Volver</button>
+        <button onclick="volver()">Volver</button>
     </section>
 
     <script src="blog.js"></script>
