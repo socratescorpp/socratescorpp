@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.formulario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario {
+    background-color: white;
+    border: 2px solid #ffa500;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.formulario:hover {
+    background-color: #ffe0b3;
+}
+
+.formulario h2 {
+    text-align: center;
+    color: #ff8000;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    color: #444;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+button#enviarBtn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button#enviarBtn:hover {
+    background-color: white;
+    color: #ff8000;
+    border: 2px solid #ff8000;
+    transform: scale(1.05);
+}
+
+.mensaje-exito {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.volver-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.volver-btn:hover {
+    background-color: white;
+    color: #ff8000;
+    border: 2px solid #ff8000;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .formulario {
+        padding: 20px;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
+}
