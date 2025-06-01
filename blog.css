@@ -45,7 +45,7 @@ button:hover {
     background-color: #cc5200;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px){
     body {
         padding: 10px;
     }
