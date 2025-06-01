@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <section id="carrito">
+        <h2>🛒 Tu Carrito</h2>
+        <div id="listaCarrito">
+        </div>
+
+        <h3>Selecciona tu método de pago</h3>
+        <div class="botones-container">
+            <button id="pagoEfectivo">Pagar en Efectivo</button>
+            <button id="pagoTarjeta">Pagar con Tarjeta</button>
+        </div>
+        <p id="mensajePago"></p>
+
+        <div class="botones-container">
+            <button id="generarTicket" style="display:none;">🧾 Generar Ticket</button>
+        </div>
+
+        <div class="botones-container">
+            <button onclick="window.location.href='index.html'">🔄 Seguir Explorando</button>
+        </div>
+
+
+        <div id="ticketCompra">
+            <h2>🎟️ Ticket de Compra</h2>
+            <div id="detalleTicket"></div>
+            <p><strong>Total:</strong> <span id="totalCompra"></span></p>
+            <div class="botones-container">
+                <button id="aceptarTicket">Aceptar</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="carrito.js"></script>
+</body>
+</html>
