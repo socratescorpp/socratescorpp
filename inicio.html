@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - Restaurante</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+
+    <section id="historia">
+        <div class="contenedor">
+            <h1>Bienvenidos a Nuestro Restaurante 🍽️</h1>
+            <p>En Q Saborsito cada plato cuenta una historia de sabor, tradición y pasión por la buena cocina.
+                 Somos un restaurante que nace del amor por los ingredientes frescos, las recetas auténticas y el
+                 deseo de ofrecer una experiencia culinaria que haga sentir a cada comensal como en casa. 
+                 Nuestro menú combina lo mejor de la cocina casera con un toque moderno, pensado para conquistar
+                 paladares de todas las edades. Desde desayunos abundantes hasta cenas llenas de sazón, 
+                 en Q Saborsito cada visita es una celebración del buen comer. Ven y descubre por qué todos dicen:
+                 ¡qué saborsito tiene este lugar!
+
+            </p>
+            <button id="verReseñas">Ver Reseñas</button>
+        </div>
+    </section>
+    <section id="imagenes">
+        <div class="contenedor">
+            <img src="comidamejor.jpg" alt="MEJOR PLATO" class="animada">
+            <img src="restaurante.jpg" alt="NUESTRO RESTAURANTE" class="animada">
+            <img src="cheffelegante.jpg" alt="CHEFF ESPECIAL" class="animada">
+        </div>
+    </section>
+    <section id="reseñas" style="display:none;">
+        <div class="contenedor">
+            <h2>CALIFIC NUESTRO RESTAURANTE Y SERVICIO ⭐</h2>
+            <p>Compartenos tu experiencia  y recomendaciones con nosotros.</p>
+            <div id="estrellas">
+                <span class="estrella" data-valor="1">★</span>
+                <span class="estrella" data-valor="2">★</span>
+                <span class="estrella" data-valor="3">★</span>
+                <span class="estrella" data-valor="4">★</span>
+                <span class="estrella" data-valor="5">★</span>
+            </div>
+            <textarea id="comentario" placeholder="Escribe tu reseña aquí..."></textarea>
+            <button id="enviarReseña">Enviar Reseña</button>
+        </div>
+    
+        <div class="contenedor">
+            <h2>Reseñas de Clientes </h2>
+            <ul id="reseñasGuardadas"></ul>
+        </div>
+    </section>
+
+    <button id="volverIndex">Volver al Inicio</button>
+
+    <script src="inicio.js"></script>
+</body>
+</html>
