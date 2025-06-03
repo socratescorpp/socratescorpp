@@ -12,14 +12,16 @@
 }
 
 .item {
-    width: 300px;
+    width: 95vw;           
+    max-width: 400px;      
     background-color: #ff8f46;
     color: white;
     border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
+    padding: 20px;
+    margin: 15px auto;
     text-align: center;
     cursor: pointer;
+    box-sizing: border-box;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -52,27 +54,22 @@ button:hover {
     background-color: #e67e22;
 }
 
+@media (min-width: 769px) {
+    .item {
+        width: 300px;
+        margin: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .fila {
         flex-direction: column;
         align-items: center;
     }
 
-    .item {
-        width: 95%; 
-        font-size: 18px;
-        padding: 20px; 
-    }
-
-    .item img {
-        width: 100%;
-        height: auto;
-    }
-
     button {
-        width: 95%; 
-        font-size: 18px;
-        padding: 12px 20px;
+        width: 100%;
+        font-size: 16px;
     }
 }
 
@@ -92,4 +89,3 @@ button:hover {
         margin: auto;
     }
 }
-
