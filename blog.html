@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog de Cocina 🍊</title>
     <link rel="stylesheet" href="blog.css" />
 </head>
@@ -11,27 +12,81 @@
         <h1>Delicias en la Cocina 🍽️🔥</h1>
     </header>
 
-    <section>
+    <section class="videos-section">
         <h2>Videos Destacados 🎥</h2>
 
-        <div class="video-item">
-            <iframe 
-                src="https://www.youtube.com/embed/1-SJGQ2HLp8" 
-                frameborder="0" 
-                allowfullscreen
-                title="Cómo hacer una pizza casera perfecta"
-            ></iframe>
-            <p>🍕 Cómo hacer una pizza casera perfecta</p>
-        </div>
+        <div class="videos-container">
+            <div class="video-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <iframe src="https://www.youtube.com/embed/mxqEM_1WiG8" frameborder="0" allowfullscreen title="Pizza Casera"></iframe>
+                        <div class="posting">🍕 Aprende a hacer la pizza casera perfecta deslizando aquí →</div>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Pizza Casera:</strong> Exquisita receta de masa de pizza. Si te gusta la pizza, ¡no te pierdas esta receta!</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="video-item">
-            <iframe 
-                src="https://www.youtube.com/embed/M8d0ZZ-Ths0" 
-                frameborder="0" 
-                allowfullscreen
-                title="Ensalada César - Receta"
-            ></iframe>
-            <p>🥗 Ensalada César - Receta</p>
+            <div class="video-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <iframe src="https://www.youtube.com/embed/xaaOAnZRB7Q" frameborder="0" allowfullscreen title="Ensalada César"></iframe>
+                        <div class="posting">🥗 Ensalada César, su historia y preparación deslizando aquí →</div>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Ensalada César:</strong> Aprende a hacer Ensalada César incluyendo la Salsa César. ¡La ensalada más internacional!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <iframe src="https://www.youtube.com/embed/vuLhtGpfAUk" frameborder="0" allowfullscreen title="Tacos Mexicanos"></iframe>
+                        <div class="posting">🌮 Tacos auténticos mexicanos, tradición y sabor deslizando aquí →</div>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Tacos Mexicanos:</strong> Aprende a preparar tacos mexicanos con esta receta paso a paso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <iframe src="https://www.youtube.com/embed/3wxEn90-YsY" frameborder="0" allowfullscreen title="Sushi Japonés"></iframe>
+                        <div class="posting">🍣 El arte del sushi japonés, historia y técnicas deslizando aquí →</div>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Sushi:</strong> Aprende los básicos del sushi con Iwao Komiyama en El Gourmet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <iframe src="https://www.youtube.com/embed/vWySIREExjo" frameborder="0" allowfullscreen title="Paella Valenciana"></iframe>
+                        <div class="posting">🥘 Paella Valenciana, tradición española deslizando aquí →</div>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Paella:</strong> La paella valenciana es la receta de arroz más popular de la gastronomía de la comunidad valenciana.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <iframe src="https://www.youtube.com/embed/xlB8o0HsYcQ" frameborder="0" allowfullscreen title="Brownies"></iframe>
+                        <div class="posting">🍫 Brownies clásicos americanos deslizando aquí →</div>
+                    </div>
+                    <div class="card-back">
+                        <p><strong>Brownies:</strong> Aprende a preparar de forma fácil y rápida el mejor brownie de chocolate del mundo.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <button onclick="volver()">Volver</button>
@@ -40,4 +95,5 @@
     <script src="blog.js"></script>
 </body>
 </html>
+
 
