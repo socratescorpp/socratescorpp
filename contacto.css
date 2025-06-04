@@ -14,6 +14,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .formulario {
@@ -25,6 +27,7 @@ body {
     max-width: 450px;
     box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
     transition: background-color 0.3s ease;
+    box-sizing: border-box;
 }
 
 .formulario:hover {
@@ -49,6 +52,7 @@ input, textarea {
     border-radius: 8px;
     margin-top: 5px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 button#enviarBtn {
@@ -99,9 +103,19 @@ button#enviarBtn:hover {
 @media (max-width: 600px) {
     .formulario {
         padding: 20px;
+        max-width: 90%;
     }
 
     input, textarea {
         font-size: 16px;
+    }
+
+    button#enviarBtn, .volver-btn {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .formulario h2 {
+        font-size: 22px;
     }
 }
